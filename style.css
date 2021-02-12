@@ -1,7 +1,120 @@
-html {
-	height: 100%;
+@font-face {
+	font-family: "Cera Pro Black";
+	src: url("/fonts/Cera\ Pro\ Black.otf") format("opentype");
+}
+@font-face {
+	font-family: "Cera Pro Medium";
+	src: url("fonts/Cera\ Pro\ Medium.otf") format("opentype");
+}
+@font-face {
+	font-family: "Cera Pro Light";
+	src: url("fonts/Cera\ Pro\ Light.otf") format("opentype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+i {
+	padding-top: 50%;
+	font-size: 90%;
+	opacity: 0.5;
+}
+
+a:hover {
+	color: #ffce00;
 }
 
 body {
-	background: radial-gradient(circle, rgb(43, 42, 42) 10%, black 100%);
+	/* background-image: url("wallpaper.jpg"); */
+	background-color: rgb(34, 34, 34);
+}
+
+section#sec-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+section#sec-1 .card {
+	width: 1100px;
+	height: 600px;
+	background-image: linear-gradient(
+		-8deg,
+		rgb(63, 63, 63) 70%,
+		rgb(43, 42, 42)
+	);
+	box-shadow: 0px 0px 6px 4px #ffce00;
+}
+
+section#sec-1 .header {
+	font-family: "Cera Pro Black";
+	display: flex;
+	margin: 40px;
+	margin-top: 50px;
+	height: 15%;
+}
+
+section#sec-1 .header-name {
+	font-size: 160%;
+	letter-spacing: 0.1rem;
+	line-height: 80%;
+	color: white;
+}
+
+section#sec-1 .parts {
+	font-family: "Cera Pro Medium";
+	font-size: 85%;
+	color: white;
+	padding-top: 0.5%;
+	opacity: 0.8;
+	padding-left: 62%;
+}
+
+section#sec-1 .space {
+	padding-left: 30%;
+}
+
+section#sec-1 .body-first-part {
+	padding-top: 2%;
+	padding-left: 40%;
+	font-family: "Cera Pro Light";
+	font-size: 85%;
+	letter-spacing: 0.2rem;
+	opacity: 0.6;
+	color: white;
+}
+
+section#sec-1 .body-second-part {
+	padding-left: 31%;
+	font-family: "Cera Pro Black";
+	font-size: 800%;
+	letter-spacing: 0.2rem;
+	text-shadow: #ffce00 2px 0 2px;
+	color: #ffce00;
+}
+
+section#sec-1 .body-third-part {
+	padding-left: 48%;
+	font-family: "Cera Pro Light";
+	font-size: 85%;
+	opacity: 0.6;
+	letter-spacing: 0.2rem;
+	color: white;
+}
+
+section#sec-1 .bottom {
+	font-family: "Cera Pro Black";
+	display: flex;
+	flex-direction: column;
+	width: 2%;
+	margin: 60px;
+	height: 15%;
 }
