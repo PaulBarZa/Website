@@ -10,10 +10,15 @@
 	font-family: "Cera Pro Light";
 	src: url("fonts/Cera\ Pro\ Light.otf") format("opentype");
 }
+@font-face {
+	font-family: "Cera Pro Regular Italic";
+	src: url("fonts/Cera\ Pro\ Regular\ Italic.otf") format("opentype");
+}
 
 * {
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 a {
@@ -36,14 +41,16 @@ body {
 	background-color: rgb(34, 34, 34);
 }
 
-section#sec-1 {
+section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	opacity: 0;
+	animation: change-opacity 2s forwards;
 }
 
-section#sec-1 .card {
+.card {
 	width: 1100px;
 	height: 600px;
 	background-image: linear-gradient(
@@ -54,7 +61,7 @@ section#sec-1 .card {
 	box-shadow: 0px 0px 6px 4px #ffce00;
 }
 
-section#sec-1 .header {
+.header {
 	font-family: "Cera Pro Black";
 	display: flex;
 	margin: 40px;
@@ -62,14 +69,16 @@ section#sec-1 .header {
 	height: 15%;
 }
 
-section#sec-1 .header-name {
+.header-name {
 	font-size: 160%;
 	letter-spacing: 0.1rem;
 	line-height: 80%;
+	opacity: 0.8;
+	text-shadow: black 2px 0 5px;
 	color: white;
 }
 
-section#sec-1 .parts {
+.parts {
 	font-family: "Cera Pro Medium";
 	font-size: 85%;
 	color: white;
@@ -78,8 +87,17 @@ section#sec-1 .parts {
 	padding-left: 62%;
 }
 
-section#sec-1 .space {
+.space {
 	padding-left: 30%;
+}
+
+.bottom {
+	font-family: "Cera Pro Black";
+	display: flex;
+	flex-direction: column;
+	width: 2%;
+	height: 15%;
+	margin: 60px;
 }
 
 section#sec-1 .body-first-part {
@@ -110,11 +128,161 @@ section#sec-1 .body-third-part {
 	color: white;
 }
 
-section#sec-1 .bottom {
-	font-family: "Cera Pro Black";
+section#sec-2 .body {
+	margin: 12%;
+	margin-top: 14%;
 	display: flex;
-	flex-direction: column;
-	width: 2%;
-	margin: 60px;
-	height: 15%;
+	align-items: center;
+}
+
+section#sec-2 .circle {
+	height: 12px;
+	width: 1.6%;
+	background-color: #ffce00;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+section#sec-2 .body .circle:nth-child(1) {
+	animation: change-opacity 2s forwards;
+	animation-delay: 0.5s;
+}
+section#sec-2 .body .line:nth-child(2) {
+	animation: change-width 2s forwards;
+	animation-delay: 1s;
+}
+section#sec-2 .body .circle:nth-child(3) {
+	animation: change-opacity 2s forwards;
+	animation-delay: 3s;
+}
+section#sec-2 .body .line:nth-child(4) {
+	animation: change-width 2s forwards;
+	animation-delay: 3.5s;
+}
+section#sec-2 .body .circle:nth-child(5) {
+	animation: change-opacity 2s forwards;
+	animation-delay: 5.5s;
+}
+section#sec-2 .body .line:nth-child(6) {
+	animation: change-width 2s forwards;
+	animation-delay: 6s;
+}
+section#sec-2 .body .circle:nth-child(7) {
+	animation: change-opacity 2s forwards;
+	animation-delay: 8s;
+}
+
+section#sec-2 .line {
+	margin-left: 2px;
+	margin-right: 2px;
+	height: 1px;
+	width: 0%;
+	background-color: #ffce00;
+}
+
+section#sec-2 .up-line {
+	height: 200%;
+	width: 1px;
+	background-color: white;
+	transform: translate(550%, -125%);
+}
+
+section#sec-2 .down-line {
+	height: 200%;
+	width: 1px;
+	background-color: white;
+	transform: translate(570%, 70%);
+}
+
+section#sec-2 .title-text {
+	position: absolute;
+	font-size: 85%;
+	font-family: "Cera Pro Medium";
+	color: #ffce00;
+	text-align: center;
+}
+
+section#sec-2 .text {
+	position: absolute;
+	font-size: 75%;
+	font-family: "Cera Pro Regular Italic";
+	color: white;
+	text-align: center;
+}
+
+section#sec-2 .subtext {
+	position: absolute;
+	font-size: 75%;
+	font-family: "Cera Pro Light";
+	color: white;
+	text-align: center;
+}
+
+section#sec-2 .body .circle:nth-child(1) .title-text {
+	transform: translate(-45px, -95px);
+}
+
+section#sec-2 .body .circle:nth-child(1) .text {
+	transform: translate(-105px, -75px);
+}
+
+section#sec-2 .body .circle:nth-child(1) .subtext {
+	transform: translate(-103px, -55px);
+}
+
+section#sec-2 .body .circle:nth-child(3) .title-text {
+	transform: translate(-45px, 55px);
+}
+
+section#sec-2 .body .circle:nth-child(3) .text {
+	transform: translate(-59px, 75px);
+}
+
+section#sec-2 .body .circle:nth-child(3) .subtext {
+	transform: translate(-140px, 95px);
+}
+
+section#sec-2 .body .circle:nth-child(5) .title-text {
+	transform: translate(-85px, -95px);
+}
+
+section#sec-2 .body .circle:nth-child(5) .text {
+	transform: translate(-120px, -75px);
+}
+
+section#sec-2 .body .circle:nth-child(5) .subtext {
+	transform: translate(-124px, -55px);
+}
+
+section#sec-2 .body .circle:nth-child(7) .title-text {
+	transform: translate(-75px, 55px);
+}
+
+section#sec-2 .body .circle:nth-child(7) .text {
+	transform: translate(-118px, 75px);
+}
+
+section#sec-2 .body .circle:nth-child(7) .subtext {
+	transform: translate(-70px, 95px);
+}
+
+section#sec-2 .bottom {
+	margin-top: 162px;
+}
+@keyframes change-opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes change-width {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 30%;
+	}
 }
