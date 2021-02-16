@@ -34,11 +34,12 @@ i {
 
 a:hover {
 	color: #ffce00;
+	/* color: #dc7b2c; */
 }
 
 body {
-	/* background-image: url("wallpaper.jpg"); */
 	background-color: rgb(34, 34, 34);
+	/* background-color: #dc7b2c; */
 }
 
 section {
@@ -58,7 +59,8 @@ section {
 		rgb(63, 63, 63) 70%,
 		rgb(43, 42, 42)
 	);
-	box-shadow: 0px 0px 6px 4px #ffce00;
+	border-radius: 1%;
+	box-shadow: 0px 0px 4px 1px #ffce00;
 }
 
 .header {
@@ -66,6 +68,7 @@ section {
 	display: flex;
 	margin: 40px;
 	margin-top: 50px;
+	margin-bottom: 5px;
 	height: 15%;
 }
 
@@ -117,6 +120,8 @@ section#sec-1 .body-second-part {
 	letter-spacing: 0.2rem;
 	text-shadow: #ffce00 2px 0 2px;
 	color: #ffce00;
+	/* text-shadow: #dc7b2c 2px 0 2px;
+	color: #dc7b2c; */
 }
 
 section#sec-1 .body-third-part {
@@ -255,7 +260,7 @@ section#sec-2 .body .circle:nth-child(5) .subtext {
 }
 
 section#sec-2 .body .circle:nth-child(7) .title-text {
-	transform: translate(-75px, 55px);
+	transform: translate(-88px, 55px);
 }
 
 section#sec-2 .body .circle:nth-child(7) .text {
@@ -267,8 +272,122 @@ section#sec-2 .body .circle:nth-child(7) .subtext {
 }
 
 section#sec-2 .bottom {
-	margin-top: 162px;
+	margin-top: 152px;
 }
+
+section#sec-3 .container {
+	display: flex;
+	overflow: hidden;
+	margin: 20px;
+	margin-left: 180px;
+	margin-right: 100px;
+}
+
+section#sec-3 .left-zone {
+	height: 75%;
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+section#sec-3 .list {
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	flex-grow: 1;
+	margin-top: 20px;
+}
+
+section#sec-3 li {
+	color: white;
+	cursor: pointer;
+	opacity: 0.8;
+	text-align: center;
+	font-size: 15px;
+	font-family: "Cera Pro Medium";
+	margin-top: 30px;
+}
+section#sec-3 .separation {
+	width: 1px;
+	height: 270px;
+	background: #ffce00;
+	opacity: 0.5;
+}
+section#sec-3 .right-zone {
+	height: 100%;
+	width: 70%;
+	flex-grow: 3;
+	color: white;
+	font-family: "Cera Pro Medium";
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+section#sec-3 .title {
+	font-family: "Cera Pro Black";
+	font-size: 25px;
+	color: #ffce00;
+}
+section#sec-3 .text {
+	font-family: "Cera Pro Light";
+	margin: 25px;
+	text-align: center;
+}
+
+section#sec-3 li:hover {
+	transition: all 0.2s ease 0s;
+	transform: translateY(-1px);
+	color: #ffce00;
+}
+
+section#sec-3 .link-actility {
+	font-weight: bold;
+	color: #17a2b8;
+}
+
+section#sec-3 .link-actility:hover {
+	text-decoration: underline #17a2b8;
+}
+
+section#sec-3 .colored {
+	font-weight: bold;
+	color: #ffce00;
+}
+
+section#sec-3 button {
+	font-family: "Cera Pro Medium";
+	font-size: 85%;
+	color: white;
+	opacity: 0.8;
+	background-color: rgb(63, 63, 63);
+	margin-top: 15px;
+	width: 150px;
+	height: 40px;
+	border: none;
+	border-radius: 5%;
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.2s ease 0s;
+	letter-spacing: 1.5px;
+}
+
+section#sec-3 button:hover {
+	color: #fff;
+	transform: translateY(-2px);
+	color: #ffce00;
+}
+
+section#sec-3 button:focus {
+	outline: none;
+}
+
+section#sec-3 .bottom {
+	margin-top: 0;
+}
+
 @keyframes change-opacity {
 	from {
 		opacity: 0;
