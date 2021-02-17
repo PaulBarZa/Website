@@ -47,8 +47,6 @@ section {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	opacity: 0;
-	animation: change-opacity 2s forwards;
 }
 
 .card {
@@ -130,6 +128,17 @@ button:focus {
 	margin: 60px;
 }
 
+.reveal {
+	opacity: 0;
+	transform: translateY(-30px);
+}
+
+.reveal-element {
+	opacity: 1;
+	transform: translateY(0);
+	transition: 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
 section#sec-1 .body-first-part {
 	padding-top: 2%;
 	padding-left: 40%;
@@ -162,6 +171,8 @@ section#sec-1 .body-third-part {
 
 section#sec-2 .body {
 	margin: 12%;
+	margin-right: 26%;
+	margin-left: 21%;
 	margin-top: 14%;
 	display: flex;
 	align-items: center;
@@ -169,37 +180,37 @@ section#sec-2 .body {
 
 section#sec-2 .circle {
 	height: 12px;
-	width: 1.6%;
+	width: 12.5px;
 	background-color: #ffce00;
 	border-radius: 50%;
 	opacity: 0;
 }
 
-section#sec-2 .body .circle:nth-child(1) {
+section#sec-2 .circle-1 {
 	animation: change-opacity 2s forwards;
 	animation-delay: 0.5s;
 }
-section#sec-2 .body .line:nth-child(2) {
+section#sec-2 .line-1 {
 	animation: change-width 2s forwards;
 	animation-delay: 1s;
 }
-section#sec-2 .body .circle:nth-child(3) {
+section#sec-2 .circle-2 {
 	animation: change-opacity 2s forwards;
 	animation-delay: 3s;
 }
-section#sec-2 .body .line:nth-child(4) {
+section#sec-2 .line-2 {
 	animation: change-width 2s forwards;
 	animation-delay: 3.5s;
 }
-section#sec-2 .body .circle:nth-child(5) {
+section#sec-2 .circle-3 {
 	animation: change-opacity 2s forwards;
 	animation-delay: 5.5s;
 }
-section#sec-2 .body .line:nth-child(6) {
+section#sec-2 .line-3 {
 	animation: change-width 2s forwards;
 	animation-delay: 6s;
 }
-section#sec-2 .body .circle:nth-child(7) {
+section#sec-2 .circle-4 {
 	animation: change-opacity 2s forwards;
 	animation-delay: 8s;
 }
@@ -236,7 +247,7 @@ section#sec-2 .title-text {
 
 section#sec-2 .text {
 	position: absolute;
-	font-size: 75%;
+	font-size: 70%;
 	font-family: "Cera Pro Regular Italic";
 	color: white;
 	text-align: center;
