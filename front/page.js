@@ -38,8 +38,10 @@ function changeText(id){
 }
 
 function submitted(event){
+
     event.preventDefault();
-    
+
+    var form =  document.getElementById("form");
     var name = document.getElementById("name").value
     var phone = document.getElementById("phone").value
     var mail = document.getElementById("mail").value
@@ -52,5 +54,24 @@ function submitted(event){
     var data = JSON.stringify({"name": name, "mail": mail, "phone": phone,"message": message});
     xhr.send(data)
 
-    document.getElementById("form").reset();
+    form.reset();
+}
+
+function openModal(){
+
+    if (document.getElementById("form").checkValidity() == true){
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+    
+        modal.style.display = "block";
+    
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
 }

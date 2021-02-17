@@ -12,7 +12,7 @@
 }
 @font-face {
 	font-family: "Cera Pro Black";
-	src: url("/fonts/Cera\ Pro\ Black.otf") format("opentype");
+	src: url("fonts/Cera\ Pro\ Black.otf") format("opentype");
 }
 
 * {
@@ -523,6 +523,52 @@ section#sec-4 button {
 section#sec-4 .right-zone i {
 	padding-top: 0;
 	opacity: 1;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	background-color: rgb(63, 63, 63);
+	margin: 15% auto;
+	padding-left: 10px;
+	border: 1px solid rgb(255, 206, 0, 0.7);
+	border-radius: 2%;
+	width: 40%;
+}
+
+.modal-message {
+	text-align: center;
+	font-family: "Cera Pro Light";
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	padding: 80px;
+	color: white;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 15px;
+}
+
+.close:hover,
+.close:focus {
+	color: #ffce00;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 @keyframes change-opacity {

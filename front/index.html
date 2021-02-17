@@ -3,10 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css"/>
-        <title>Paul Barthe CV</title>
         <script src="https://kit.fontawesome.com/a266f21d5e.js" crossorigin="anonymous"></script>        
         <script type="text/javascript" src="page.js"></script>
-
+        <title>Paul Barthe</title>
     </head>
 
     <body>
@@ -175,21 +174,30 @@
                                 CONTACT FORM
                             </div>
                             <form id="form">
-                                <div class="input">Your name : <input type="text" id="name" autocomplete="off"/></div>
+                                <div class="input">Your name : <input type="text" id="name" autocomplete="off" required/></div>
                                 <div class="underlined"></div>
                                 <div class="input">Your phone : <input type="text" id="phone" autocomplete="off"/></div>
                                 <div class="underlined"></div>
-                                <div class="input">Your e-mail : <input type="text" id="mail" autocomplete="off"/></div>
+                                <div class="input">Your e-mail : <input type="email" id="mail" autocomplete="off" required/></div>
                                 <div class="underlined"></div>
                                 <div class="input">Message : </div>
-                                <textarea class="textarea" rows="4" id="message"></textarea>
-                                <button type="submit" name="submit">SEND MESSAGE <i class="fas fa-arrow-right"></i></button>
+                                <textarea class="textarea" rows="4" id="message" required></textarea>
+                                <button onclick="openModal()" type="submit" name="submit">SEND MESSAGE <i class="fas fa-arrow-right"></i></button>
                             </form>
                         </div>
                     </div>
+                    
                 </div>
 
             </div>
         </section>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="modal-message">Thank you for your message !
+                    I will answer you as soon as possible.</p>
+        </div>
+
     </body>
 </html>
