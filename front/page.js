@@ -7,7 +7,7 @@ const androidProject ="This is the content of my future android project"
 const schoolTitle = "School Project Title"
 const schoolProject ="This is the content of my future school project"
 
-const webSiteTitle = "This web site"
+const webSiteTitle = "This website"
 const webSiteProject ="The objective of this project was to have fun while reinforcing my mastery of the basic tools of web development.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript, Node.js."
 
 const ratio = .3
@@ -36,6 +36,8 @@ const handleIntersect = function (entries, observer) {
                     el.classList.add("line-"+y)
                     y++
                 })
+
+                section_2.querySelector('.right-zone').classList.add("reveal-right-zone");
             }
             observer.unobserve(entry.target)
         }

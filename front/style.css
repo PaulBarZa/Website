@@ -170,10 +170,14 @@ section#sec-1 .body-third-part {
 }
 
 section#sec-2 .body {
-	margin: 12%;
-	margin-right: 26%;
-	margin-left: 21%;
-	margin-top: 14%;
+	display: flex;
+	margin-top: 10px;
+}
+
+section#sec-2 .left-zone {
+	margin-left: 10%;
+	padding-right: 13%;
+	width: 500px;
 	display: flex;
 	align-items: center;
 }
@@ -309,8 +313,46 @@ section#sec-2 .body .circle:nth-child(7) .subtext {
 	transform: translate(-70px, 95px);
 }
 
+section#sec-2 .right-zone {
+	margin-right: 2%;
+	margin-top: 25px;
+	width: 400px;
+	letter-spacing: 0.1px;
+	opacity: 0;
+}
+
+section#sec-2 .reveal-right-zone {
+	animation: change-opacity 2s forwards;
+	animation-delay: 1s;
+}
+
+section#sec-2 .courses-title {
+	color: white;
+	font-family: "Cera Pro Black";
+	font-size: 95%;
+	opacity: 0.9;
+	text-align: center;
+}
+
+section#sec-2 .courses {
+	padding-left: 8px;
+	color: white;
+	font-family: "Cera Pro Light";
+	font-size: 85%;
+	text-indent: 4px;
+}
+
+section#sec-2 .colored {
+	color: #ffce00;
+	font-family: "Cera Pro Medium";
+}
+
+section#sec-2 button {
+	margin-left: 200px;
+}
+
 section#sec-2 .bottom {
-	margin-top: 152px;
+	margin-top: 0px;
 }
 
 section#sec-3 .container {
@@ -399,6 +441,10 @@ section#sec-3 .colored {
 
 section#sec-3 .bottom {
 	margin-top: 0;
+}
+
+section#sec-4 .colored {
+	color: #ffce00;
 }
 
 section#sec-4 .container {
@@ -508,7 +554,6 @@ section#sec-4 textarea {
 
 section#sec-4 textarea:focus {
 	outline: none;
-	border-color: #ffce00;
 }
 
 section#sec-4 .textarea {
