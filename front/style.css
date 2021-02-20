@@ -139,6 +139,10 @@ button:focus {
 	transition: 0.8s cubic-bezier(0.5, 0, 0, 1);
 }
 
+.hidden {
+	opacity: 0;
+}
+
 section#sec-1 .body-first-part {
 	padding-top: 2%;
 	padding-left: 40%;
@@ -174,12 +178,41 @@ section#sec-2 .body {
 	margin-top: 10px;
 }
 
-section#sec-2 .left-zone {
-	margin-left: 10%;
-	padding-right: 13%;
-	width: 500px;
+section#sec-2 .card {
+	position: relative;
+	cursor: pointer;
+	transform-style: preserve-3d;
+	transition: 1s;
+}
+
+section#sec-2 .graphic {
 	display: flex;
 	align-items: center;
+	margin-left: 200px;
+	padding-right: 250px;
+	margin-top: 120px;
+	width: 60%;
+	height: 50%;
+}
+
+section#sec-2 .card-face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+section#sec-2 .card-back {
+	margin-top: 100px;
+	width: 80%;
+	padding-right: 80px;
+	background-size: cover;
+	transform: rotateY(180deg);
+}
+
+section#sec-2 .flip {
+	transform: rotateY(180deg);
 }
 
 section#sec-2 .circle {
@@ -313,25 +346,11 @@ section#sec-2 .body .circle:nth-child(7) .subtext {
 	transform: translate(-70px, 95px);
 }
 
-section#sec-2 .right-zone {
-	margin-right: 2%;
-	margin-top: 25px;
-	width: 400px;
-	letter-spacing: 0.1px;
-	opacity: 0;
-}
-
-section#sec-2 .reveal-right-zone {
-	animation: change-opacity 2s forwards;
-	animation-delay: 1s;
-}
-
 section#sec-2 .courses-title {
 	color: white;
 	font-family: "Cera Pro Black";
 	font-size: 95%;
 	opacity: 0.9;
-	text-align: center;
 }
 
 section#sec-2 .courses {
@@ -348,11 +367,11 @@ section#sec-2 .colored {
 }
 
 section#sec-2 button {
-	margin-left: 200px;
+	margin-left: 600px;
 }
 
 section#sec-2 .bottom {
-	margin-top: 0px;
+	margin-top: 170px;
 }
 
 section#sec-3 .container {
