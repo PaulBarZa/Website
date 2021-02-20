@@ -370,6 +370,28 @@ section#sec-2 button {
 	margin-left: 600px;
 }
 
+section#sec-2 .front-flip {
+	padding-left: 1000px;
+}
+
+section#sec-2 .front-flip i {
+	font-size: x-large;
+	padding: 0;
+	float: right;
+	opacity: 0.7;
+}
+
+section#sec-2 .back-flip {
+	padding-left: 890px;
+	padding-top: 80px;
+}
+
+section#sec-2 .back-flip i {
+	font-size: x-large;
+	padding: 0;
+	opacity: 0.7;
+}
+
 section#sec-2 .bottom {
 	margin-top: 170px;
 }

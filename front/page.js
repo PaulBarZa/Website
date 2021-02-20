@@ -23,14 +23,6 @@ const handleIntersect = function (entries, observer) {
             entry.target.classList.add("reveal-element")
 
             var section_2 = document.getElementById("sec-2");
-            var card = section_2.querySelector(".card");
-
-            card.addEventListener("click", function(){
-                card.classList.toggle("flip")
-                setTimeout(()=>{
-                    card.querySelector(".card-front").classList.toggle("hidden")
-                },200)
-            })
             
             if(section_2.querySelector(".reveal-element") != null){
 
@@ -49,6 +41,16 @@ const handleIntersect = function (entries, observer) {
             observer.unobserve(entry.target)
         }
     })
+}
+
+function flipcard(){
+    var section_2 = document.getElementById("sec-2");
+    var card = section_2.querySelector(".card");
+
+    card.classList.toggle("flip")
+    setTimeout(()=>{
+        card.querySelector(".card-front").classList.toggle("hidden")
+    },200)
 }
 
 window.onload = function () {
