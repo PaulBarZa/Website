@@ -10,6 +10,11 @@ const schoolProject ="This is the content of my future school project"
 const webSiteTitle = "This website"
 const webSiteProject ="The objective of this project was to have fun while reinforcing my mastery of the basic tools of web development.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript, Node.js."
 
+const yellow = "#ffce00";
+const black = "rgb(34, 34, 34)";
+const orange = "#f7892f";
+const bgOrange = "#c96f25";
+
 const ratio = .3
 const options = {
     root: null,
@@ -43,46 +48,77 @@ const handleIntersect = function (entries, observer) {
     })
 }
 
+window.onload = function () {
+    switchText(1);
+    var form = document.getElementById("form").onsubmit = submitted.bind(form);
+
+    var observer = new IntersectionObserver(handleIntersect, options);
+    document.querySelectorAll('.reveal').forEach(function (r) {
+        observer.observe(r);
+    })
+};
+
+function switchColor(){
+    var body = document.querySelector('body');
+    var color = body.style.getPropertyValue("--color");
+    if(color == yellow){
+        changeColor(orange, bgOrange, yellow);
+        document.querySelector("body").querySelectorAll(".card").forEach(function (card){
+            card.style.setProperty("box-shadow", "0 45px 100px rgba(14, 21, 47, 0.4), 0 16px 40px rgba(14, 21, 47, 0.4)")
+        });
+    }else{
+        changeColor(yellow, black, orange);
+        document.querySelector("body").querySelectorAll(".card").forEach(function (card){
+            card.style.setProperty("box-shadow", "0px 0px 4px 1px #ffce00")
+        });
+    }
+}
+
+function changeColor(color, bgcolor, otherColor){
+    var body = document.querySelector('body');
+    
+    body.style.setProperty("--color", color);
+    body.style.setProperty("--bgcolor", bgcolor);
+    document.querySelector("body").querySelector(".circle").style.setProperty("background-color", otherColor);
+    document.querySelector("body").querySelector(".color").style.setProperty("color", otherColor);
+}
+
 function flipcard(){
     var section_2 = document.getElementById("sec-2");
     var card = section_2.querySelector(".card");
 
-    card.classList.toggle("flip")
+    card.classList.toggle("flip");
     setTimeout(()=>{
-        card.querySelector(".card-front").classList.toggle("hidden")
+        card.querySelector(".card-front").classList.toggle("hidden");
     },200)
 }
 
-window.onload = function () {
-    changeText(1);
-    var form = document.getElementById("form").onsubmit = submitted.bind(form);
-
-    var observer = new IntersectionObserver(handleIntersect, options)
-    document.querySelectorAll('.reveal').forEach(function (r) {
-    observer.observe(r)
-    })
-};
-
-function changeText(id){
+function switchText(id){
 
     for (let i = 1; i < 5; i++) {
-        document.getElementById('el'+i).style.color = "white";
+        document.getElementById('el'+i).style.fontWeight = "normal";
     }
 
-    if(id==1){
-        document.getElementById('title').innerHTML = actilityTitle;
-        document.getElementById('text').innerHTML =actilityProject;
-    } else if(id==2){
-        document.getElementById('title').innerHTML = androidTitle;
-        document.getElementById('text').innerHTML =androidProject;
-    } else if(id==3){
-        document.getElementById('title').innerHTML = schoolTitle;
-        document.getElementById('text').innerHTML =schoolProject;
-    } else if(id==4){
-        document.getElementById('title').innerHTML = webSiteTitle;
-        document.getElementById('text').innerHTML = webSiteProject;
+    switch(id) {
+        case 1:
+            changeText(actilityTitle, actilityProject);
+            break;
+        case 2:
+            changeText(androidTitle, androidProject);
+            break;
+        case 3:
+            changeText(schoolTitle, schoolProject);
+            break;
+        default:
+            changeText(webSiteTitle, webSiteProject);
     }
-    document.getElementById('el'+id).style.color = "#ffce00";
+
+    document.getElementById('el'+id).style.fontWeight = "bold";
+}
+
+function changeText(title, text){
+    document.getElementById('title').innerHTML = title;
+    document.getElementById('text').innerHTML = text;    
 }
 
 function submitted(event){
@@ -90,17 +126,17 @@ function submitted(event){
     event.preventDefault();
 
     var form =  document.getElementById("form");
-    var name = document.getElementById("name").value
-    var phone = document.getElementById("phone").value
-    var mail = document.getElementById("mail").value
-    var message = document.getElementById("message").value
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var mail = document.getElementById("mail").value;
+    var message = document.getElementById("message").value;
 
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "http://localhost:3000/sendmail", true);
     xhr.setRequestHeader("Content-Type", "application/json");
 
     var data = JSON.stringify({"name": name, "mail": mail, "phone": phone,"message": message});
-    xhr.send(data)
+    xhr.send(data);
 
     form.reset();
 }
