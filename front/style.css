@@ -23,22 +23,98 @@ body {
 	--bgcolor: #c96f25;
 }
 
+.row {
+	display: flex;
+}
+
+input[type="checkbox"] {
+	width: 38px;
+	border-radius: 11px;
+}
+
+.switch {
+	position: relative;
+	margin-left: 2px;
+	margin-right: 2px;
+	display: inline-block;
+	width: 60px;
+	height: 22px;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 15px;
+	width: 15px;
+	left: 4px;
+	bottom: 4px;
+	background-color: var(--color);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(36px);
+	-ms-transform: translateX(36px);
+	transform: translateX(36px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.language {
+	display: flex;
+	position: fixed;
+	margin-left: 110px;
+	color: var(--color);
+	font-family: "Cera Pro Medium";
+	font-size: 115%;
+	border-bottom-right-radius: 2rem;
+	border-bottom-left-radius: 2rem;
+	padding: 1rem;
+	background-color: rgb(63, 63, 63);
+}
+
+.long-circle {
+	margin-left: 8px;
+	margin-top: 5px;
+	width: 20px;
+	height: 20px;
+	background-color: var(--color);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
 .color {
 	position: fixed;
 	margin-left: 1600px;
-	color: var(--color);
+	color: #ffce00;
 	font-family: "Cera Pro Medium";
 	font-size: 100%;
 	border-bottom-right-radius: 5rem;
 	border-bottom-left-radius: 5rem;
 	padding: 1.5rem;
 	background-color: rgb(63, 63, 63);
-	color: #ffce00;
 }
 
-.circle {
-	margin-left: 8px;
-	margin-top: 5px;
+div#row .circle {
 	width: 40px;
 	height: 40px;
 	background-color: #ffce00;
@@ -300,7 +376,6 @@ section#sec-2 .title-text {
 	font-size: 85%;
 	font-family: "Cera Pro Medium";
 	color: var(--color);
-	text-align: center;
 }
 
 section#sec-2 .text {
@@ -308,7 +383,6 @@ section#sec-2 .text {
 	font-size: 70%;
 	font-family: "Cera Pro Regular Italic";
 	color: white;
-	text-align: center;
 }
 
 section#sec-2 .subtext {
@@ -316,51 +390,50 @@ section#sec-2 .subtext {
 	font-size: 75%;
 	font-family: "Cera Pro Light";
 	color: white;
-	text-align: center;
 }
 
 section#sec-2 .body .circle:nth-child(1) .title-text {
-	transform: translate(-45px, -95px);
+	transform: translate(-70px, -95px);
 }
 
 section#sec-2 .body .circle:nth-child(1) .text {
-	transform: translate(-105px, -75px);
+	transform: translate(-70px, -75px);
 }
 
 section#sec-2 .body .circle:nth-child(1) .subtext {
-	transform: translate(-103px, -55px);
+	transform: translate(-70px, -55px);
 }
 
 section#sec-2 .body .circle:nth-child(3) .title-text {
-	transform: translate(-45px, 55px);
+	transform: translate(-70px, 55px);
 }
 
 section#sec-2 .body .circle:nth-child(3) .text {
-	transform: translate(-59px, 75px);
+	transform: translate(-70px, 75px);
 }
 
 section#sec-2 .body .circle:nth-child(3) .subtext {
-	transform: translate(-140px, 95px);
+	transform: translate(-70px, 95px);
 }
 
 section#sec-2 .body .circle:nth-child(5) .title-text {
-	transform: translate(-85px, -95px);
+	transform: translate(-70px, -95px);
 }
 
 section#sec-2 .body .circle:nth-child(5) .text {
-	transform: translate(-120px, -75px);
+	transform: translate(-70px, -75px);
 }
 
 section#sec-2 .body .circle:nth-child(5) .subtext {
-	transform: translate(-124px, -55px);
+	transform: translate(-70px, -55px);
 }
 
 section#sec-2 .body .circle:nth-child(7) .title-text {
-	transform: translate(-88px, 55px);
+	transform: translate(-70px, 55px);
 }
 
 section#sec-2 .body .circle:nth-child(7) .text {
-	transform: translate(-118px, 75px);
+	transform: translate(-70px, 75px);
 }
 
 section#sec-2 .body .circle:nth-child(7) .subtext {
@@ -574,7 +647,11 @@ section#sec-4 .right-zone {
 section#sec-4 .right-zone .title {
 	font-family: "Cera Pro Black";
 	font-size: 32px;
-	margin-left: 105px;
+	text-align: center;
+}
+
+section#sec-4 .form {
+	justify-content: center;
 }
 
 section#sec-4 .input {
@@ -639,7 +716,8 @@ section#sec-4 .underlined {
 }
 
 section#sec-4 button {
-	margin-left: 160px;
+	margin-left: 130px;
+	width: 200px;
 }
 
 section#sec-4 .right-zone i {

@@ -1,14 +1,13 @@
-const actilityTitle = "Web application Frontend & Backend"
-const actilityProject = "From July to the end of December 2020, I did an internship in the company <a href='https://www.actility.com' target='_blank' class='link-actility'>Actility</a>. My project was to develop a web application to drive a LoRaWAN network.<br><br><span class='colored'>Key learnings:</span> Angular, Go, REST API, LoRaWAN network, Linux."
-
-const androidTitle = "Android Title"
-const androidProject ="This is the content of my future android project"
-
-const schoolTitle = "School Project Title"
-const schoolProject ="This is the content of my future school project"
-
-const webSiteTitle = "This website"
-const webSiteProject ="The objective of this project was to have fun while reinforcing my mastery of the basic tools of web development.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript, Node.js."
+var projects = {
+    actilityTitle : "Web application Frontend & Backend",
+    actilityProject : "From July to the end of December 2020, I did an internship in the company <a href='https://www.actility.com' target='_blank' class='link-actility'>Actility</a>. My project was to develop a web application to drive a LoRaWAN network.<br><br><span class='colored'>Key learnings:</span> Angular, Go, REST API, LoRaWAN network, Linux.",
+    androidTitle : "Android Title",
+    acandroidProject : "This is the content of my future android project",
+    schoolTitle : "School Project Title",
+    schoolProject : "This is the content of my future school project",
+    webSiteTitle : "This website",
+    webSiteProject : "The objective of this project was to have fun while reinforcing my mastery of the basic tools of web development.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript, Node.js.",
+}
 
 const yellow = "#ffce00";
 const black = "rgb(34, 34, 34)";
@@ -96,24 +95,24 @@ function flipcard(){
 function switchText(id){
 
     for (let i = 1; i < 5; i++) {
-        document.getElementById('el'+i).style.fontWeight = "normal";
+        document.getElementById(i).style.fontWeight = "normal";
     }
 
     switch(id) {
         case 1:
-            changeText(actilityTitle, actilityProject);
+            changeText(projects["actilityTitle"], projects["actilityProject"]);
             break;
         case 2:
-            changeText(androidTitle, androidProject);
+            changeText(projects["androidTitle"], projects["androidProject"]);
             break;
         case 3:
-            changeText(schoolTitle, schoolProject);
+            changeText(projects["schoolTitle"], projects["schoolProject"]);
             break;
-        default:
-            changeText(webSiteTitle, webSiteProject);
+        case 4:
+            changeText(projects["webSiteTitle"], projects["webSiteProject"]);
     }
 
-    document.getElementById('el'+id).style.fontWeight = "bold";
+    document.getElementById(id).style.fontWeight = "bold";
 }
 
 function changeText(title, text){
