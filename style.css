@@ -15,10 +15,13 @@
 	src: url("fonts/Cera\ Pro\ Black.otf") format("opentype");
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	scroll-behavior: smooth;
 	--color: #f7892f;
 	--bgcolor: #c96f25;
 }
