@@ -131,7 +131,7 @@ function submitted(event){
     var message = document.getElementById("message").value;
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:3000/sendmail", true);
+    xhr.open("POST", "https://cv-paul-barthe.herokuapp.com/sendmail", true);
     xhr.setRequestHeader("Content-Type", "application/json");
 
     var data = JSON.stringify({"name": name, "mail": mail, "phone": phone,"message": message});
