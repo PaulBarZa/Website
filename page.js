@@ -152,19 +152,19 @@ function submitted(event){
 
 function openModal(){
 
-    if (document.getElementById("form").checkValidity() == true){
-        var modal = document.getElementById("myModal");
-        var span = document.getElementsByClassName("close")[0];
+    // if (document.getElementById("form").checkValidity() == true){
+    //     var modal = document.getElementById("myModal");
+    //     var span = document.getElementsByClassName("close")[0];
     
-        modal.style.display = "block";
+    //     modal.style.display = "block";
     
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    }
+    //     span.onclick = function() {
+    //         modal.style.display = "none";
+    //     }
+    //     window.onclick = function(event) {
+    //         if (event.target == modal) {
+    //             modal.style.display = "none";
+    //         }
+    //     }
+    // }
 }

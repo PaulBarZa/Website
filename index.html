@@ -225,21 +225,24 @@
 
                 </div>
                 <div class="right-zone">
+                    <div class="maintenance">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
                     <div class="form">
                         <div class="title">
                             CONTACT FORM
                         </div>
                         <form id="form">
-                            <div class="input"><span class="input-message">Your name : </span><input type="text" id="name" autocomplete="off" required />
+                            <div class="input"><span class="input-message">Your name : </span><input type="text" id="name" autocomplete="off" disabled=true required />
                             </div>
                             <div class="underlined"></div>
-                            <div class="input"><span class="input-message">Your phone : </span><input type="text" id="phone" autocomplete="off" /></div>
+                            <div class="input"><span class="input-message">Your phone : </span><input type="text" id="phone" autocomplete="off" disabled=true/></div>
                             <div class="underlined"></div>
-                            <div class="input"><span class="input-message">Your e-mail : </span><input type="email" id="mail" autocomplete="off"
+                            <div class="input"><span class="input-message">Your e-mail : </span><input type="email" id="mail" autocomplete="off" disabled=true
                                     required /></div>
                             <div class="underlined"></div>
                             <div class="input">Message : </div>
-                            <textarea class="textarea" rows="4" id="message" required></textarea>
+                            <textarea class="textarea" rows="4" id="message" disabled=true required></textarea>
                             <button onclick="openModal()" type="submit" name="submit"><span class="message">SEND MESSAGE&nbsp;</span><i
                                     class="fas fa-arrow-right"></i></button>
                         </form>

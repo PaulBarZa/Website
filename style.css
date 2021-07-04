@@ -647,6 +647,19 @@ section#sec-4 .right-zone {
 	letter-spacing: 0.5px;
 }
 
+section#sec-4 .maintenance {
+	position: absolute;
+	padding-left: 170px;
+	padding-top: 80px;
+	color: orange;
+	font-size: 800%;
+	z-index: 1;
+}
+
+section#sec-4 .right-zone .form {
+	opacity: 0.3;
+}
+
 section#sec-4 .right-zone .title {
 	font-family: "Cera Pro Black";
 	font-size: 32px;
