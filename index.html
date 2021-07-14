@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a266f21d5e.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="page.js"></script>
@@ -13,7 +14,8 @@
 <body>
     <div id="row" class="row">
         <div class="language"><span class="en">&nbsp;&nbsp;English&nbsp;&nbsp;</span><label class="switch"><input id="checkbox" type="checkbox" onclick="javascript:switchLanguage()"><span
-                    class="slider round"></span></label><span class="fr">&nbsp;&nbsp;French&nbsp;&nbsp;</span></div>
+                    class="slider round"></span></label><span class="fr">&nbsp;&nbsp;Français&nbsp;&nbsp;</span></div>
+        <div class="download"><button onclick="window.open('paul_barthe_resume.pdf')" id="download_resume">Download my resume</button></div>
         <div class="color"><div class="circle" onclick="javascript:switchColor()"></div>
         </div>
     </div>
@@ -173,7 +175,9 @@
                 <div class="right-zone">
                     <div class="title" id="title"><br></div>
                     <div class="text" id="text"></div>
-                    <button id="see-more" onClick="">SEE MORE</button>
+                    <div class="see-more">
+                        <button id="see-more" onClick=""><i class="fab fa-github"></i></button>
+                    </div>
                 </div>
             </div>
 
@@ -207,8 +211,8 @@
                 <div class=left-zone>
                     <div class="title">CONTACT</div>
                     <br>
-                    <p>Currently looking for an internship in the field of machine learning. You can contact me via
-                        e-mail, phone, linkedin or via the contact form.</p>
+                    <p>Currently looking for an internship in the field of machine learning, you can contact me via
+                        e-mail, phone, linkedin or via the contact form (currently unavailable).</p>
                     <br>
                     <div class="subtitle">Phone</div>
                     <p>+337 81 09 14 85</p>

@@ -1,5 +1,9 @@
 const language = {
     eng: {
+        resume:{
+            download: "Download my resume",
+            link: "window.open('paul_barthe_resume.pdf')",
+        },
         header:{
             part_1: 'EDUCATION',
             part_2: 'PROJECTS',
@@ -57,15 +61,14 @@ const language = {
                 androidTitle : "Android application",
                 androidProject : "As part of a school project I was able to develop a very simple application that allows you to scan food products and get information on the product's impact on health and the environment.<br><br><span class='colored'>Stack:</span> Android studio, Kotlin. ",
                 minesweeperTitle : "Minewseeper AI",
-                minesweeperProject : "I have developed two machine learning models to play the mineweeper game. A model by constraint satisfaction and logic and a Double Deep Q-Learning model.<br><br><span class='colored'>Key learnings:</span> Reinforcement learningn, Deep neural networks, Python, Machine learning tools (Tensoflow, Keras ...) and constraint satisfaction solvers.",
+                minesweeperProject : "I have developed two machine learning models to play the mineweeper game. A model by constraint satisfaction and logic and a Double Deep Q-Learning model.<br><br><span class='colored'>Key learnings:</span> Reinforcement learning, Deep neural networks, Python, Machine learning tools (Tensoflow, Keras ...) and constraint satisfaction solvers.",
                 webSiteTitle : "This website",
                 webSiteProject : "The objective of this project was to have fun while reinforcing my mastery of the basic tools of web development.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript, Node.js.",
-            },
-            button: "SEE MORE",
+            }
         },
         section_4:{
             title: "CONTACT",
-            text: "Currently looking for an internship in the field of machine learning. You can contact me via e-mail, phone, linkedin or via the contact form.",
+            text: "Currently looking for an internship in the field of machine learning, you can contact me via e-mail, phone, linkedin or via the contact form (currently unavailable).",
             phone: "Phone",
             number_phone: "+337 81 09 14 85",
             form:{
@@ -82,6 +85,10 @@ const language = {
         color: "COLOR",
     },
     fr: {
+        resume:{
+            download: "Télécharger mon CV",
+            link: "window.open('paul_barthe_resume_fr.pdf')",
+        },
         header:{
             part_1: 'FORMATION',
             part_2: 'PROJETS',
@@ -137,17 +144,16 @@ const language = {
                 actilityTitle: "Application web Frontend & Backend",
                 actilityProject: "De juillet à fin décembre 2020, j'ai effectué un stage dans l'entreprise <a href='https://www.actility.com' target='_blank' class='link-actility'>Actility</a>. J'ai développé une application web visant à piloter un réseau LoRaWAN.<br><br><span class='colored'>Principaux enseignements:</span> Angular, Go, REST API, réseau LoRaWAN, Linux.",
                 androidTitle: "Application Android",
-                androidProject: "Dans le cadre d'un projet d'école j'ai pu développer une application très simpliste qui permet de scanner les produits alimentaires et d'obtenir une information sur l'impact du produit sur la santé et l'environnement.<br><br><span class='colored'>Stack:</span> Android Stuido, Kotlin.",
+                androidProject: "Dans le cadre d'un projet d'école j'ai pu développer une application simple qui permet de scanner les produits alimentaires et d'obtenir une information sur l'impact du produit sur la santé et l'environnement.<br><br><span class='colored'>Stack:</span> Android Stuido, Kotlin.",
                 minesweeperTitle: "IA jeu du démineur",
                 minesweeperProject: "J'ai développé deux modèles de machine learning pour jouer au jeu mineweeper. Un modèle par satisfaction de contraintes et logique et un modèle de Double Deep Q-Learning.<br><br><span class='colored'>Principaux enseignements:</span> Apprentissage par renforcement, Réseaux de neurones profonds, Python, Outils de machine learning (Tensoflow, Keras...) et solveurs de satisfaction de contraintes.",
                 webSiteTitle: "Ce site",
                 webSiteProject: "L'objectif de ce projet était de m'amuser tout en renforçant ma maîtrise des outils de base du développement web.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript, Node.js.",
-            },
-            button: "VOIR PLUS",
+            }
         }, 
         section_4:{
             title: "CONTACT",
-            text: "Actuellement à la recherche d'un stage dans le domaine de l'intelligence artificielle. Vous pouvez me contacter par e-mail, téléphone, linkedin ou via le formulaire de contact.",
+            text: "Actuellement à la recherche d'un stage dans le domaine de l'intelligence artificielle, vous pouvez me contacter par e-mail, téléphone, linkedin ou via le formulaire de contact (actuellement indisponible).",
             phone: "Téléphone",
             number_phone: "07 81 09 14 85",
             form:{
@@ -176,7 +182,11 @@ function switchLanguage() {
 }
 
 function changeLang(lang){
-
+    // Download resume
+    var resume_button = document.getElementById("download_resume")
+    resume_button.textContent = lang.resume.download
+    console.log(resume_button.getAttribute("onClick"))
+    resume_button.setAttribute("onClick", lang.resume.link)
     // Header
     var headers = document.querySelectorAll(".parts");
 
@@ -249,15 +259,14 @@ function changeLang(lang){
         var a = el.querySelector("a");
 
         a.textContent = lg_sec_3.li["title_"+i];
-        i++;
 
         if(a.style.fontWeight == "bold"){
             projects = lg_sec_3.projects; 
+            switchText(i)
             a.click();
         }
+        i++;
     })
-
-    sec_3.querySelector("button").textContent = lg_sec_3.button;
 
     // Section 4
     var sec_4 = document.getElementById("sec-4");
@@ -279,9 +288,6 @@ function changeLang(lang){
     sec_4.querySelector(".message").innerHTML = lg_sec_4.form.sendMessage;
     
     // Global
-
-    document.querySelector(".en").innerHTML = lang.en;
-    document.querySelector(".fr").innerHTML = lang.fr;
     document.querySelector(".modal-message").textContent = lang.modal;
 }
 
