@@ -317,10 +317,12 @@ section#sec-2 .card-back {
 	padding-right: 80px;
 	background-size: cover;
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
 }
 
 section#sec-2 .flip {
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
 }
 
 section#sec-2 .circle {
