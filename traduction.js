@@ -63,12 +63,12 @@ const language = {
                 minesweeperTitle : "Minewseeper AI",
                 minesweeperProject : "I have developed two machine learning models to play the mineweeper game. A model by constraint satisfaction and logic and a Double Deep Q-Learning model.<br><br><span class='colored'>Key learnings:</span> Reinforcement learning, Deep neural networks, Python, Machine learning tools (Tensoflow, Keras ...) and constraint satisfaction solvers.",
                 webSiteTitle : "This website",
-                webSiteProject : "The objective of this project was to have fun while reinforcing my mastery of the basic tools of web development.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript, Node.js.",
+                webSiteProject : "The objective of this project was to have fun while reinforcing my mastery of the basic tools of web development.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.",
             }
         },
         section_4:{
             title: "CONTACT",
-            text: "Currently looking for an internship in the field of machine learning, you can contact me via e-mail, phone, linkedin or via the contact form (currently unavailable).",
+            text: "Student looking for experience and learning, you can contact me via e-mail, phone, linkedin or via the contact form.",
             phone: "Phone",
             number_phone: "+337 81 09 14 85",
             form:{
@@ -148,12 +148,12 @@ const language = {
                 minesweeperTitle: "IA jeu du démineur",
                 minesweeperProject: "J'ai développé deux modèles de machine learning pour jouer au jeu mineweeper. Un modèle par satisfaction de contraintes et logique et un modèle de Double Deep Q-Learning.<br><br><span class='colored'>Principaux enseignements:</span> Apprentissage par renforcement, Réseaux de neurones profonds, Python, Outils de machine learning (Tensoflow, Keras...) et solveurs de satisfaction de contraintes.",
                 webSiteTitle: "Ce site",
-                webSiteProject: "L'objectif de ce projet était de m'amuser tout en renforçant ma maîtrise des outils de base du développement web.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript, Node.js.",
+                webSiteProject: "L'objectif de ce projet était de m'amuser tout en renforçant ma maîtrise des outils de base du développement web.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.",
             }
         }, 
         section_4:{
             title: "CONTACT",
-            text: "Actuellement à la recherche d'un stage dans le domaine de l'intelligence artificielle, vous pouvez me contacter par e-mail, téléphone, linkedin ou via le formulaire de contact (actuellement indisponible).",
+            text: "Etudiant à la recherche d'expérience et d'apprentissage, vous pouvez me contacter par e-mail, téléphone, linkedin ou via le formulaire de contact.",
             phone: "Téléphone",
             number_phone: "07 81 09 14 85",
             form:{

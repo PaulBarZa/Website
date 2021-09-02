@@ -6,7 +6,7 @@ var projects = {
     minesweeperTitle : "Minewseeper AI",
     minesweeperProject : "I have developed two machine learning models to play the mineweeper game. A model by constraint satisfaction and logic and a Double Deep Q-Learning model.<br><br><span class='colored'>Key learnings:</span> Reinforcement learning, Deep neural networks, Python, Machine learning tools (Tensoflow, Keras ...) and constraint satisfaction solvers.",
     webSiteTitle : "This website",
-    webSiteProject : "The objective of this project was to have fun while reinforcing my mastery of the basic tools of web development.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript, Node.js.",
+    webSiteProject : "The objective of this project was to have fun while reinforcing my mastery of the basic tools of web development.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.",
 }
 
 const yellow = "#ffce00";
