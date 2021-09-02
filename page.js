@@ -49,8 +49,7 @@ const handleIntersect = function (entries, observer) {
 
 window.onload = function () {
     switchText(1);
-    var form = document.getElementById("form").onsubmit = submitted.bind(form);
-
+    document.getElementById("form").reset();
     var observer = new IntersectionObserver(handleIntersect, options);
     document.querySelectorAll('.reveal').forEach(function (r) {
         observer.observe(r);
@@ -126,41 +125,3 @@ function changeText(title, text){
     document.getElementById('text').innerHTML = text;    
 }
 
-function submitted(event){
-
-    event.preventDefault();
-
-    var form =  document.getElementById("form");
-    var name = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
-    var mail = document.getElementById("mail").value;
-    var message = document.getElementById("message").value;
-
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://cv-paul-barthe.herokuapp.com/sendmail", true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    var data = JSON.stringify({"name": name, "mail": mail, "phone": phone,"message": message});
-    xhr.send(data);
-
-    form.reset();
-}
-
-function openModal(){
-
-    // if (document.getElementById("form").checkValidity() == true){
-    //     var modal = document.getElementById("myModal");
-    //     var span = document.getElementsByClassName("close")[0];
-    
-    //     modal.style.display = "block";
-    
-    //     span.onclick = function() {
-    //         modal.style.display = "none";
-    //     }
-    //     window.onclick = function(event) {
-    //         if (event.target == modal) {
-    //             modal.style.display = "none";
-    //         }
-    //     }
-    // }
-}

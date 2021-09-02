@@ -673,9 +673,9 @@ section#sec-4 .maintenance {
 	z-index: 1;
 }
 
-section#sec-4 .right-zone .form {
+/* section#sec-4 .right-zone .form {
 	opacity: 0.3;
-}
+} */
 
 section#sec-4 .right-zone .title {
 	font-family: "Cera Pro Black";
