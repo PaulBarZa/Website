@@ -4,19 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/skeleton.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <script src="https://kit.fontawesome.com/a266f21d5e.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="page.js"></script>
-    <script type="text/javascript" src="traduction.js"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+    <script type="text/javascript" src="js/traduction.js"></script>
     <title>Paul Barthe</title>
 </head>
 
 <body>
-    <div id="row" class="row">
-        <div class="language"><span class="en">&nbsp;&nbsp;English&nbsp;&nbsp;</span><label class="switch"><input id="checkbox" type="checkbox" onclick="javascript:switchLanguage()"><span
-                    class="slider round"></span></label><span class="fr">&nbsp;&nbsp;Français&nbsp;&nbsp;</span></div>
-        <div class="download"><button onclick="window.open('paul_barthe_resume.pdf')" id="download_resume">Download my resume</button></div>
-        <div class="color"><div class="circle" onclick="javascript:switchColor()"></div>
+    <div class="container_header">
+        <div id="header_row" class="header_row">
+            <div class="language"><span class="en">&nbsp;&nbsp;English&nbsp;&nbsp;</span><label class="switch"><input id="checkbox" type="checkbox" onclick="javascript:switchLanguage()"><span
+                        class="slider round"></span></label><span class="fr">&nbsp;&nbsp;Français&nbsp;&nbsp;</span></div>
+            <button onclick="window.open('ressources/paul_barthe_resume.pdf')" id="download_resume">Download my resume</button>
+            <div class="color"><div class="circle" onclick="javascript:switchColor()"></div>
+            </div>
         </div>
     </div>
 

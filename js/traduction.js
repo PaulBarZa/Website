@@ -2,7 +2,7 @@ const language = {
     eng: {
         resume:{
             download: "Download my resume",
-            link: "window.open('paul_barthe_resume.pdf')",
+            link: "window.open('ressources/paul_barthe_resume.pdf')",
         },
         header:{
             part_1: 'EDUCATION',
@@ -87,7 +87,7 @@ const language = {
     fr: {
         resume:{
             download: "Télécharger mon CV",
-            link: "window.open('paul_barthe_resume_fr.pdf')",
+            link: "window.open('ressources/paul_barthe_resume_fr.pdf')",
         },
         header:{
             part_1: 'FORMATION',
@@ -172,7 +172,7 @@ const language = {
 }
 
 function switchLanguage() {
-    var isChecked = document.getElementById("row").querySelector("input").checked;
+    var isChecked = document.getElementById("header_row").querySelector("input").checked;
 
     if (isChecked){
         changeLang(language.fr);

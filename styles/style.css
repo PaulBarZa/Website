@@ -1,18 +1,18 @@
 @font-face {
 	font-family: "Cera Pro Medium";
-	src: url("fonts/Cera\ Pro\ Medium.otf") format("opentype");
+	src: url("../fonts/Cera\ Pro\ Medium.otf") format("opentype");
 }
 @font-face {
 	font-family: "Cera Pro Light";
-	src: url("fonts/Cera\ Pro\ Light.otf") format("opentype");
+	src: url("../fonts/Cera\ Pro\ Light.otf") format("opentype");
 }
 @font-face {
 	font-family: "Cera Pro Regular Italic";
-	src: url("fonts/Cera\ Pro\ Regular\ Italic.otf") format("opentype");
+	src: url("../fonts/Cera\ Pro\ Regular\ Italic.otf") format("opentype");
 }
 @font-face {
 	font-family: "Cera Pro Black";
-	src: url("fonts/Cera\ Pro\ Black.otf") format("opentype");
+	src: url("../fonts/Cera\ Pro\ Black.otf") format("opentype");
 }
 
 html {
@@ -26,8 +26,11 @@ body {
 	--bgcolor: #c96f25;
 }
 
-.row {
+.header_row {
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
 input[type="checkbox"] {
@@ -84,8 +87,6 @@ input:checked + .slider:before {
 
 .language {
 	display: flex;
-	position: fixed;
-	margin-left: 110px;
 	color: var(--color);
 	font-family: "Cera Pro Medium";
 	font-size: 115%;
@@ -106,8 +107,6 @@ input:checked + .slider:before {
 }
 
 .color {
-	position: fixed;
-	margin-left: 1600px;
 	color: #ffce00;
 	font-family: "Cera Pro Medium";
 	font-size: 100%;
@@ -117,16 +116,13 @@ input:checked + .slider:before {
 	background-color: rgb(63, 63, 63);
 }
 
-.download {
-	margin: auto;
-}
-.download button {
+.header_row button {
 	margin-top: 20px;
 	width: 200px;
 	background-color: rgb(63, 63, 63);
 	opacity: 1;
 }
-div#row .circle {
+div#header_row .circle {
 	width: 40px;
 	height: 40px;
 	background-color: #ffce00;
@@ -509,7 +505,7 @@ section#sec-3 .container {
 	display: flex;
 	overflow: hidden;
 	margin: 20px;
-	margin-left: 180px;
+	margin-left: 120px;
 	margin-right: 100px;
 }
 
@@ -523,7 +519,7 @@ section#sec-3 .left-zone {
 
 section#sec-3 .list {
 	display: flex;
-	align-content: center;
+	align-items: center;
 	flex-direction: column;
 	flex-grow: 1;
 	margin-top: 20px;
@@ -554,7 +550,6 @@ section#sec-3 .see-more i {
 }
 
 section#sec-3 .right-zone {
-	height: 100%;
 	width: 70%;
 	flex-grow: 3;
 	color: white;
@@ -575,6 +570,8 @@ section#sec-3 .text {
 	font-family: "Cera Pro Light";
 	margin: 25px;
 	text-align: center;
+	margin-right: 35px;
+	margin-left: 35px;
 }
 
 section#sec-3 li:hover {
