@@ -56,6 +56,15 @@ window.onload = function () {
     })
 };
 
+window.onscroll = function () {
+    var scroll_up_classList = document.getElementById("scroll_up").classList;
+    if(document.documentElement.scrollTop > 350){
+        scroll_up_classList.add("reveal-element");
+    }else{
+        scroll_up_classList.remove("reveal-element");
+    }
+};
+
 function switchColor(){
     var body = document.querySelector('body');
     var color = body.style.getPropertyValue("--color");

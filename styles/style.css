@@ -15,6 +15,17 @@
 	src: url("../fonts/Cera\ Pro\ Black.otf") format("opentype");
 }
 
+body::-webkit-scrollbar {
+	width: 8px; /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-thumb {
+	background-color: #ffce00; /* color of the scroll thumb */
+	border-radius: 16px; /* roundness of the scroll thumb */
+	border: 5px solid #ffce00; /* creates padding around scroll thumb */
+}
+
+
 html {
 	scroll-behavior: smooth;
 }
@@ -24,6 +35,11 @@ body {
 	padding: 0;
 	--color: #f7892f;
 	--bgcolor: #c96f25;
+	
+}
+
+.container_header {
+    position: relative;
 }
 
 .header_row {
@@ -799,6 +815,13 @@ section#sec-4 .right-zone i {
 	color: var(--color);
 	text-decoration: none;
 	cursor: pointer;
+}
+
+#scroll_up {
+	position: fixed;
+	bottom : 20px;
+	right: 50px;
+	font-size: 50px;
 }
 
 @keyframes change-opacity {
