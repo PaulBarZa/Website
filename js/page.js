@@ -63,6 +63,7 @@ window.onscroll = function () {
     }else{
         scroll_up_classList.remove("reveal-element");
     }
+    switchLanguage();
 };
 
 function switchColor(){
