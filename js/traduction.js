@@ -63,7 +63,7 @@ const language = {
                 actilityTitle : "Web application Frontend & Backend",
                 actilityProject : "From July to the end of December 2020, I did an internship in the company <a href='https://www.actility.com' target='_blank' class='link-actility'>Actility</a>. My project was to develop a web application to drive a LoRaWAN network.<br><br><span class='colored'>Key learnings:</span> Angular, Go, REST API, LoRaWAN network.",
                 otherstuffTitle: "Some projects",
-                otherstuffProject: "<a href='https://github.com/PaulBarZa/sushi_classifier' target='_blank' class='link-actility'>Sushi classification</a><br><span class='colored'>With:</span> Deep learning, Extra trees and Support Vector Classifier.<br><br><a href='https://github.com/PaulBarZa/Website' target='_blank' class='link-actility'>This website</a><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.<br><br>Frontend development for <a href='https://www.gamingsquad.io/' target='_blank' class='link-actility'>Gaming Squad</a><br><span class='colored'>Stack:</span> ReactJS.",
+                otherstuffProject: "<a href='sushi.html' class='link-actility'>Sushi classification</a><br><span class='colored'>With:</span> Deep learning, Extra trees and Support Vector Classifier.<br><br><a href='https://github.com/PaulBarZa/Website' target='_blank' class='link-actility'>This website</a><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.<br><br>Frontend development for <a href='https://www.gamingsquad.io/' target='_blank' class='link-actility'>Gaming Squad</a><br><span class='colored'>Stack:</span> ReactJS.",
             }
         },
         section_4:{
@@ -148,7 +148,7 @@ const language = {
                 actilityTitle: "Application web Frontend & Backend",
                 actilityProject: "De juillet à fin décembre 2020, j'ai effectué un stage dans l'entreprise <a href='https://www.actility.com' target='_blank' class='link-actility'>Actility</a>. J'ai développé une application web visant à piloter un réseau LoRaWAN.<br><br><span class='colored'>Principaux enseignements:</span> Angular, Go, REST API, réseau LoRaWAN.",
                 otherstuffTitle: "Projets en vrac",
-                otherstuffProject: "<a href='https://github.com/PaulBarZa/sushi_classifier' target='_blank' class='link-actility'>Classification de sushi</a><br><span class='colored'>Avec:</span> Apprentissage profond, Forêts aléatoires extrêmes et Machine à vecteur de support.<br><br><a href='https://github.com/PaulBarZa/Website' target='_blank' class='link-actility'>Ce site</a><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.<br><br>Développement frontend pour <a href='https://www.gamingsquad.io/' target='_blank' class='link-actility'>Gaming Squad</a><br><span class='colored'>Stack:</span> ReactJS.",
+                otherstuffProject: "<a href='sushi.html' class='link-actility'>Classification de sushi</a><br><span class='colored'>Avec:</span> Apprentissage profond, Forêts aléatoires extrêmes et Machine à vecteur de support.<br><br><a href='https://github.com/PaulBarZa/Website' target='_blank' class='link-actility'>Ce site</a><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.<br><br>Développement frontend pour <a href='https://www.gamingsquad.io/' target='_blank' class='link-actility'>Gaming Squad</a><br><span class='colored'>Stack:</span> ReactJS.",
             }
         }, 
         section_4:{
