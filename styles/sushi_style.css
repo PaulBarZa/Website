@@ -51,13 +51,17 @@ label {
     transition: none;
 }
 
+.card img{
+    margin-left: auto;
+}
+
 /* Result */
 
 .result_container{
     display: flex;
     flex-direction: row;
     margin-top: 35px;
-    width: 300px;
+    width: 400px;
     height: 150px;
     justify-content: space-between;
 }
@@ -89,6 +93,13 @@ label {
 
 .others_result .div{
     margin-top: 10px;
+}
+
+#go_back {
+	position: fixed;
+	bottom : 50px;
+	left: 100px;
+	font-size: 50px;
 }
 
  @keyframes shake {
