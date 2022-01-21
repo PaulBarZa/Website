@@ -57,20 +57,48 @@ var input;
 var curFiles;
 var body;
 var card;
+var sushi_selector_index = 0;
 
 window.onload = async function () {
     body =  document.querySelector("body")
     card = body.querySelector(".card")
     input = card.querySelector("input");
     preview = body.querySelector(".preview");
+    panda = body.querySelector(".panda");
 
     card.querySelector("label").classList.remove("shake")
     input.addEventListener('change', updateImageDisplay);
     card.classList.add("reveal-element");
+    panda.classList.add("reveal-element");
+
+    switchSushiMode("prediction");
 
     model = await tf.loadLayersModel("../models/model.json");
 }
 
+
+function switchSushiMode(sushi_mode) {
+    var prediction_div = document.getElementById("prediction");
+    var generation_div = document.getElementById("generation");
+    var prediction_part = document.querySelector(".prediction_part");
+    var generation_part = document.querySelector(".generation_part");
+    var footer = document.querySelector(".footer");
+
+    if(sushi_mode == "prediction"){
+        switchMode(prediction_div, generation_div, prediction_part, generation_part)
+        footer.style.display = "none"
+    }else{
+        switchMode(generation_div, prediction_div, generation_part, prediction_part)
+        footer.style.display = "flex"
+    }
+}
+
+function switchMode(selected_div, unselected_div, selected_part, unselected_part) {
+    selected_div.classList.add("selected")
+    unselected_div.classList.remove("selected")
+    selected_part.style.display = "flex"
+    unselected_part.style.display = "none"
+}
 
 function updateImageDisplay() {
     curFiles = input.files;
@@ -131,4 +159,33 @@ function predict() {
             );
         };
     }
+}
+
+function generate(){
+    image = document.getElementById("generated_image");
+    var n_images = 2
+    var random_index = Math.floor(Math.random() * n_images)
+
+    switch(sushi_selector_index){
+        case 0:
+            image.src = "../images/maki/maki_"+random_index+".jpg"
+            break;
+        case 1:
+            image.src = "../images/nigiri/nigiri"+random_index+".jpg"
+            break;
+        default:
+            image.src = "../images/ikura_gunkan/ikura_"+random_index+".jpg"
+            break;
+    }
+}
+
+function sushiSelector(sushi_index) {
+    sushi_selector_list = document.querySelector(".sushi_selector_container").querySelectorAll('span')
+    // Remove actual 
+    sushi_selector_list[sushi_selector_index].classList.remove("selected");
+    sushi_selector_list[sushi_selector_index].classList.add("unselected");
+    // Actualise with current (clicked)
+    sushi_selector_list[sushi_index].classList.remove("unselected");
+    sushi_selector_list[sushi_index].classList.add("selected");
+    sushi_selector_index = sushi_index;
 }
