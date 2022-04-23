@@ -257,6 +257,11 @@ button:focus {
 	transform: translateY(-30px);
 }
 
+.scroll_reveal{
+	opacity: 0;
+	transform: translateY(-30px);
+}
+
 .reveal-element {
 	opacity: 1;
 	transform: translateY(0);

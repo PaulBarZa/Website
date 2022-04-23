@@ -1,14 +1,4 @@
-var projects = {
-    actilityTitle : "Web application Frontend & Backend",
-    actilityProject : "From July to the end of December 2020, I did an internship in the company <a href='https://www.actility.com' target='_blank' class='link-actility'>Actility</a>. My project was to develop a web application to drive a LoRaWAN network.<br><br><span class='colored'>Key learnings:</span> Angular, Go, REST API, LoRaWAN network, Linux.",
-    androidTitle : "Android application",
-    androidProject : "As part of a school project I was able to develop a very simple application that allows you to scan food products and get information on the product's impact on health and the environment.<br><br><span class='colored'>Stack:</span> Android studio, Kotlin. ",
-    minesweeperTitle : "Minewseeper AI",
-    minesweeperProject : "I have developed two machine learning models to play the mineweeper game. A model by constraint satisfaction and logic and a Double Deep Q-Learning model.<br><br><span class='colored'>Key learnings:</span> Reinforcement learning, Deep neural networks, Python, Machine learning tools (Tensoflow, Keras ...) and constraint satisfaction solvers.",
-    webSiteTitle : "This website",
-    webSiteProject : "The objective of this project was to have fun while reinforcing my mastery of the basic tools of web development.<br><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.",
-}
-
+var projects = language.eng.section_3.projects;
 const yellow = "#ffce00";
 const black = "rgb(34, 34, 34)";
 const orange = "#f7892f";
@@ -108,23 +98,22 @@ function switchText(id){
     var button = document.getElementById("see-more");
     switch(id) {
         case 1:
+            changeText(projects["cytomineTitle"], projects["cytomineProject"]);
+            button.setAttribute("onClick", "javascript:window.open('https://github.com/cytomine', '_blank');");
+            button.hidden = false;
+            break;
+        case 2:
             changeText(projects["minesweeperTitle"], projects["minesweeperProject"]);
             button.setAttribute("onClick", "javascript:window.open('https://github.com/PaulBarZa/minesweeper_machine_learning', '_blank');");
             button.hidden = false;
             break;
-        case 2:
+        case 3:
             changeText(projects["actilityTitle"], projects["actilityProject"]);
             button.hidden = true;
             break;
-        case 3:
-            changeText(projects["androidTitle"], projects["androidProject"]);
-            button.setAttribute("onClick", "javascript:window.open('https://github.com/PaulBarZa/Orange_App', '_blank');");
-            button.hidden = false;
-            break;
         case 4:
-            changeText(projects["webSiteTitle"], projects["webSiteProject"]);
-            button.setAttribute("onClick", "javascript:window.open('https://github.com/PaulBarZa/Cv_Paul_Barthe', '_blank');");
-            button.hidden = false;
+            changeText(projects["otherstuffTitle"], projects["otherstuffProject"]);
+            button.hidden = true;
     }
 
     document.getElementById(id).style.fontWeight = "bold";

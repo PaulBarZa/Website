@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Find this website [here](https://paulbarza.github.io/Website/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulBarZa/Cv_Paul_Barthe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulBarZa/Cv_Paul_Barthe/issues"
+  },
+  "homepage": "https://github.com/PaulBarZa/Cv_Paul_Barthe#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.13.0",
+    "@tensorflow/tfjs-node": "^3.13.0",
+    "express": "^4.17.2"
+  }
+}
