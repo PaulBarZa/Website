@@ -95,32 +95,52 @@ function switchText(id){
     for (let i = 1; i < 5; i++) {
         document.getElementById(i).style.fontWeight = "normal";
     }
-    var button = document.getElementById("see-more");
     switch(id) {
         case 1:
-            changeText(projects["cytomineTitle"], projects["cytomineProject"]);
-            button.setAttribute("onClick", "javascript:window.open('https://github.com/cytomine', '_blank');");
-            button.hidden = false;
+            changeText(projects["cytomineTitle"], projects["cytomineProject"], projects["cytomineButton"], "");
             break;
         case 2:
-            changeText(projects["minesweeperTitle"], projects["minesweeperProject"]);
-            button.setAttribute("onClick", "javascript:window.open('https://github.com/PaulBarZa/minesweeper_machine_learning', '_blank');");
-            button.hidden = false;
+            changeText(projects["aiTitle"], projects["aiProject"], projects["aiButton"], projects["aiButtonText"]);
             break;
         case 3:
-            changeText(projects["actilityTitle"], projects["actilityProject"]);
-            button.hidden = true;
+            changeText(projects["actilityTitle"], projects["actilityProject"], "", "");
             break;
         case 4:
-            changeText(projects["otherstuffTitle"], projects["otherstuffProject"]);
-            button.hidden = true;
+            changeText(projects["otherstuffTitle"], projects["otherstuffProject"], "", "");
     }
 
     document.getElementById(id).style.fontWeight = "bold";
 }
 
-function changeText(title, text){
-    document.getElementById('title').innerHTML = title;
-    document.getElementById('text').innerHTML = text;    
+function changeText(title, text, link, linktext){
+    resetText();
+    console.log(link);
+    if(Array.isArray(title)){
+        for (let i = 1; i < title.length + 1; i++) {
+            document.getElementById('title'+i).innerHTML = title[i-1];
+            document.getElementById('text'+i).innerHTML = text[i-1];  
+            document.getElementById("see-more"+i).setAttribute("onClick", "javascript:window.open('"+link[i-1]+"', '_blank');");
+            document.getElementById("see-more"+i).hidden = false;
+            document.getElementById("see-more-text"+i).innerHTML = linktext[i-1];
+        }
+    }else{
+        document.getElementById('title1').innerHTML = title;
+        document.getElementById('text1').innerHTML = text;  
+        if(link != ""){
+            document.getElementById("see-more1").setAttribute("onClick", "javascript:window.open('"+link+"', '_blank');");
+            document.getElementById("see-more1").hidden = false;
+            document.getElementById("see-more-text1").innerHTML = linktext;
+        }
+    }
+}
+
+function resetText(){
+    for (let i = 1; i < 3; i++) {
+        document.getElementById('title'+i).innerHTML = "";
+        document.getElementById('text'+i).innerHTML = "";  
+        document.getElementById("see-more"+i).hidden = true;
+        document.getElementById("see-more-text"+i).innerHTML = "";
+
+    }
 }
 

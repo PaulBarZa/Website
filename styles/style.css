@@ -525,9 +525,10 @@ section#sec-2 .bottom {
 section#sec-3 .container {
 	display: flex;
 	overflow: hidden;
-	margin: 20px;
+	margin: 10px;
 	margin-left: 120px;
 	margin-right: 100px;
+	height: 55%;
 }
 
 section#sec-3 .left-zone {
@@ -568,6 +569,10 @@ section#sec-3 .see-more i {
 	padding-top: 0%;
 	font-size: 140%;
 	opacity: 0.85;
+}
+
+section#sec-3 .see-more-text {
+	font-size: 80%;
 }
 
 section#sec-3 .right-zone {
@@ -617,6 +622,8 @@ section#sec-3 .colored {
 }
 
 section#sec-3 .bottom {
+	position: absolute;
+	top: 10;
 	margin-top: 0;
 }
 

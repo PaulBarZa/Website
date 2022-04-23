@@ -51,19 +51,22 @@ const language = {
         section_3:{
             li:{
                 title_1: "Intern in machine learning",
-                title_2: "Minesweeper AI",
+                title_2: "AI Projects",
                 title_3: "Intern in web development",
                 title_4: "Some projects",
             },
             projects:{
-                cytomineTitle: "Collaborative analysis of multi-gigapixel images",
-                cytomineProject: "Currently through my end of study internship (from February to August 2022), I am participating in the development of machine learning solutions integrated in the <a href='https://cytomine.com/' target='_blank' class='link-actility'>Cytomine</a> platform. Cytomine is an open source platform for the analysis of very large medical images<br><br>",
-                minesweeperTitle : "Minewseeper AI",
-                minesweeperProject : "I have developed two machine learning models to play the mineweeper game. A model by constraint satisfaction and logic and a Double Deep Q-Learning model.<br><br><span class='colored'>Key learnings:</span> Reinforcement learning, Deep neural networks, Python, Machine learning tools (Tensoflow, Keras ...) and constraint satisfaction solvers.",
+                cytomineTitle: "Cytomine",
+                cytomineProject: "Currently through my end of study internship (from February to August 2022), I am participating in the development of machine learning solutions integrated in the <a href='https://cytomine.com/' target='_blank' class='link-actility'>Cytomine</a> platform. Cytomine is an open source platform for collaborative analysis of multi-gigapixel medical images<br><br>Also doing some Backend and Frontend stuff.",
+                cytomineButton: "https://github.com/cytomine",
+                aiTitle : ["Minewseeper", "Sushi"],
+                aiProject : ["I have developed two machine learning models to play the mineweeper game. One with <span class='colored'>constraint satisfaction and logic</span> and one with <span class='colored'>Double Deep Q-Learning</span>.",  "Sushi classification with <span class='colored'>Deep learning, Extra trees and Support Vector Classifier</span>.<br><br>Sushi generation with <span class='colored'>GAN networks</span>.<a href='sushi.html' class='link-actility'>Try it here !</a>"],
+                aiButton: ["https://github.com/PaulBarZa/minesweeper_machine_learning", "https://github.com/PaulBarZa/Sushi_Classification"],
+                aiButtonText: [" Minesweeper", " Sushi"],
                 actilityTitle : "Web application Frontend & Backend",
                 actilityProject : "From July to the end of December 2020, I did an internship in the company <a href='https://www.actility.com' target='_blank' class='link-actility'>Actility</a>. My project was to develop a web application to drive a LoRaWAN network.<br><br><span class='colored'>Key learnings:</span> Angular, Go, REST API, LoRaWAN network.",
                 otherstuffTitle: "Some projects",
-                otherstuffProject: "<a href='sushi.html' class='link-actility'>Sushi classification</a><br><span class='colored'>With:</span> Deep learning, Extra trees and Support Vector Classifier.<br><br><a href='https://github.com/PaulBarZa/Website' target='_blank' class='link-actility'>This website</a><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.<br><br>Frontend development for <a href='https://www.gamingsquad.io/' target='_blank' class='link-actility'>Gaming Squad</a><br><span class='colored'>Stack:</span> ReactJS.",
+                otherstuffProject: "<a href='https://github.com/PaulBarZa/Website' target='_blank' class='link-actility'>This website</a><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.<br><br>Frontend development for <a href='https://www.gamingsquad.io/' target='_blank' class='link-actility'>Gaming Squad</a><br><span class='colored'>Stack:</span> ReactJS.",
             }
         },
         section_4:{
@@ -136,19 +139,22 @@ const language = {
         section_3:{
             li:{
                 title_1: "Stage en machine learning",
-                title_2: "IA jeu du démineur",
+                title_2: "Projets en IA",
                 title_3: "Stage de web développeur",
-                title_4: "Projets en vrac",
+                title_4: "Projets autres",
             },
             projects: {
-                cytomineTitle:"Analyse collaborative d'images multi-gigapixels",
-                cytomineProject:"Actuellement dans mon stage de fin d'étude (de février à août 2022), je participe au développement de solutions de machine learning intégrées dans la plateforme <a href='https://cytomine.com/' target='_blank' class='link-actility'>Cytomine</a>. Cytomine est une plateforme open source permettant l'analyse d'images médicales de très grandes tailles.<br><br>",
-                minesweeperTitle: "IA jeu du démineur",
-                minesweeperProject: "J'ai développé deux modèles de machine learning pour jouer au jeu mineweeper. Un modèle par satisfaction de contraintes et logique et un modèle de double apprentissage profond par renforcement.<br><br><span class='colored'>Principaux enseignements:</span> Apprentissage par renforcement, Réseaux de neurones profonds, Python, Outils de machine learning (Tensoflow, Keras...) et solveurs de satisfaction de contraintes.",
+                cytomineTitle:"Cytomine",
+                cytomineProject:"Actuellement dans mon stage de fin d'étude (de février à août 2022), je participe au développement de solutions de machine learning intégrées dans la plateforme <a href='https://cytomine.com/' target='_blank' class='link-actility'>Cytomine</a>. Cytomine est une plateforme open source permettant l'analyse collaborative d'images médicales de très grandes tailles.<br><br>",
+                cytomineButton: "https://github.com/cytomine",
+                aiTitle: ["Démineur", "Sushi"],
+                aiProject: ["Modèles de machine learning pour le jeu du démineur. Un par <span class='colored'>satisfaction de contraintes et logique</span> et un par <span class='colored'>double apprentissage profond par renforcement</span>", "Classification de sushi à l'aide <span class='colored'>d'apprentissage profond, de forêts aléatoires extrêmes et de machine à vecteur de support.</span>.<br><br>Génération de sushi à l'aide d'un <span class='colored'>GAN.</span>.<a href='sushi.html' class='link-actility'>Testez le !</a>"],
+                aiButton: ["https://github.com/PaulBarZa/minesweeper_machine_learning", "https://github.com/PaulBarZa/Sushi_Classification"],
+                aiButtonText: [" Démineur", " Sushi"],
                 actilityTitle: "Application web Frontend & Backend",
                 actilityProject: "De juillet à fin décembre 2020, j'ai effectué un stage dans l'entreprise <a href='https://www.actility.com' target='_blank' class='link-actility'>Actility</a>. J'ai développé une application web visant à piloter un réseau LoRaWAN.<br><br><span class='colored'>Principaux enseignements:</span> Angular, Go, REST API, réseau LoRaWAN.",
-                otherstuffTitle: "Projets en vrac",
-                otherstuffProject: "<a href='sushi.html' class='link-actility'>Classification de sushi</a><br><span class='colored'>Avec:</span> Apprentissage profond, Forêts aléatoires extrêmes et Machine à vecteur de support.<br><br><a href='https://github.com/PaulBarZa/Website' target='_blank' class='link-actility'>Ce site</a><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.<br><br>Développement frontend pour <a href='https://www.gamingsquad.io/' target='_blank' class='link-actility'>Gaming Squad</a><br><span class='colored'>Stack:</span> ReactJS.",
+                otherstuffTitle: "Projets autres",
+                otherstuffProject: "<a href='https://github.com/PaulBarZa/Website' target='_blank' class='link-actility'>Ce site</a><br><span class='colored'>Stack:</span> HTML/CSS, Javascript.<br><br>Développement frontend pour <a href='https://www.gamingsquad.io/' target='_blank' class='link-actility'>Gaming Squad</a><br><span class='colored'>Stack:</span> ReactJS.",
             }
         }, 
         section_4:{
