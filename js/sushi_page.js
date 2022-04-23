@@ -168,15 +168,15 @@ function generate(){
 
     switch(sushi_selector_index){
         case 0:
-            image.src = "../images/maki/maki_"+random_index+".png"
+            image.src = "./images/maki/maki_"+random_index+".png"
             break;
         case 1:
-            image.src = "../images/panda_sleeping.png"
-            // image.src = "../images/nigiri/nigiri"+random_index+".jpg"
+            image.src = "./images/panda_sleeping.png"
+            // image.src = "./images/nigiri/nigiri"+random_index+".jpg"
             break;
         default:
-            image.src = "../images/panda_eating.png"
-            // image.src = "../images/ikura_gunkan/ikura_"+random_index+".jpg"
+            image.src = "./images/panda_eating.png"
+            // image.src = "./images/ikura_gunkan/ikura_"+random_index+".jpg"
             break;
     }
 }
