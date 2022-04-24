@@ -73,7 +73,7 @@ window.onload = async function () {
 
     switchSushiMode("prediction");
 
-    model = await tf.loadLayersModel("../models/model.json");
+    model = await tf.loadLayersModel("https://github.com/PaulBarZa/Website/blob/master/models/model.json");
 }
 
 
