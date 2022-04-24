@@ -576,7 +576,7 @@ section#sec-3 .see-more-text {
 }
 
 section#sec-3 .right-zone {
-	width: 70%;
+	width: 60%;
 	flex-grow: 3;
 	color: white;
 	font-family: "Cera Pro Medium";
@@ -852,4 +852,42 @@ section#sec-4 .right-zone i {
 	to {
 		width: 30%;
 	}
+}
+
+@media all and (max-width:1056px){
+	section#sec-2 .front-flip{padding-left: 900px;}
+	section#sec-2 .back-flip{padding-top: 50px; padding-left: 800px;}
+}
+
+@media all and (max-width:948px){
+	.header{width: 80%;}
+	section#sec-2 .back-flip{padding-top: 40px; padding-left: 700px;}
+}
+
+@media all and (max-width:800px){
+	.header{width: 70%;}
+	section#sec-2 .front-flip{padding-left: 650px;}
+	section#sec-2 button{margin-left: 500px;}
+	section#sec-2 .back-flip{padding-top: 20px; padding-left: 620px;}
+}
+
+@media all and (max-width:720px){
+	.header{width: 55%;}
+	section#sec-2 .front-flip{padding-left: 550px;}
+	section#sec-2 button{margin-left: 400px;}
+	section#sec-2 .back-flip{padding-top: 20px; padding-left: 500px;}
+}
+
+@media all and (max-width:620px){
+	.header{width: 40%;}
+	section#sec-2 .front-flip{padding-left: 450px;}
+	section#sec-2 button{margin-left: 300px;}
+	section#sec-2 .back-flip{padding-top: 0px; padding-left: 400px;}
+}
+
+@media all and (max-width:540px){
+	.header{width: 10%;}
+	section#sec-2 .front-flip{padding-left: 300px;}
+	section#sec-2 button{margin-left: 200px;}
+	section#sec-2 .back-flip{padding-top: 0px; padding-left: 200px;}
 }

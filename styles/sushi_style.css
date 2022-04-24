@@ -222,3 +222,37 @@ label {
     color: white;
 }
 
+
+@media all and (max-width:1560px){
+	.panda{margin-top: 18%; left: 70%;}
+}
+
+@media all and (max-width:1246px){
+	.panda{margin-top: 22%; left: 78%;}
+}
+
+@media all and (max-width:1056px){
+	.panda{margin-top: 25%; left: 85%;}
+}
+
+@media all and (max-width:948px){
+	.panda{margin-top: 27%; left: 82%;}
+
+}
+
+@media all and (max-width:800px){
+	.panda{margin-top: 33%; left: 80%;}
+
+}
+
+@media all and (max-width:720px){
+	.panda{margin-top: 38%; left: 75%;}
+}
+
+@media all and (max-width:620px){
+	.panda{margin-top: 40%; left: 72%;}
+}
+
+@media all and (max-width:540px){
+	.panda{margin-top: 45%; left: 70%;}
+}
