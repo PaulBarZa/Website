@@ -11,8 +11,8 @@ const language = {
         },
         section_1:{
             title_1: 'I AM',
-            title_3: 'A STUDENT IN',
-            title_4: 'COMPUTER SCIENCE',
+            title_3: 'A RANDOM GUY',
+            title_4: '(WHO LIKES COMPUTER SCIENCE)',
         },
         section_2:{
             circle_1:{
@@ -36,7 +36,7 @@ const language = {
                 subtext: "Equivalent of a master's degree in computer engineering.",
             },
             title_1: "Competences:",
-            courses_2: " I'm comfortable on Linux and Windows system.",
+            courses_2: " I'm comfortable on Linux (<3) and Windows system.",
             courses_title_3: "Languages:",
             courses_3: " French (Native language), English level C1 (TOEIC 895/990), Spanish level B2.",
             title_2: "Main courses at the EPF engineering school:",
@@ -50,14 +50,14 @@ const language = {
         },
         section_3:{
             li:{
-                title_1: "Intern in machine learning",
+                title_1: "End of study internship",
                 title_2: "AI Projects",
                 title_3: "Intern in web development",
                 title_4: "Some projects",
             },
             projects:{
                 cytomineTitle: "Cytomine",
-                cytomineProject: "Currently through my end of study internship (from February to August 2022), I am participating in the development of machine learning solutions integrated in the <a href='https://cytomine.com/' target='_blank' class='link-actility'>Cytomine</a> platform. Cytomine is an open source platform for collaborative analysis of multi-gigapixel medical images<br><br>Also doing some Backend and Frontend stuff.",
+                cytomineProject: "Currently through my end of study internship (from February to August 2022), I am participating in the integration of machine learning solutions in the <a href='https://cytomine.com/' target='_blank' class='link-actility'>Cytomine</a> platform. Cytomine is an open source platform for collaborative analysis of multi-gigapixel medical images<br><br>Also did some Backend / Frontend stuff and worked on optimising the launch of the algorithms.",
                 cytomineButton: "https://github.com/cytomine",
                 aiTitle : ["Minewseeper", "Sushi"],
                 aiProject : ["I have developed two machine learning models to play the mineweeper game. One with <span class='colored'>constraint satisfaction and logic</span> and one with <span class='colored'>Double Deep Q-Learning</span>.",  "Sushi classification with <span class='colored'>Deep learning, Extra trees and Support Vector Classifier</span>.<br><br>Sushi generation with <span class='colored'>GAN networks</span>.<a href='sushi.html' class='link-actility'>Try it here !</a>"],
@@ -99,8 +99,8 @@ const language = {
         },
         section_1:{
             title_1: 'JE SUIS',
-            title_3: 'UN ETUDIANT EN',
-            title_4: 'INFORMATIQUE',
+            title_3: 'UN SIMPLE TYPE',
+            title_4: "(QUI AIME L'INFORMATIQUE)",
         },
         section_2:{
             circle_1:{
@@ -124,7 +124,7 @@ const language = {
                 subtext: 'Scpécialité informatique de deux ans.',
             },
             title_1: "Compétences:",
-            courses_2: " Je suis à l'aise sur les systèmes Linux et Windows.",
+            courses_2: " Je suis à l'aise sur les systèmes Linux (<3) et Windows.",
             courses_title_3: "Langues:",
             courses_3: " Français (langue natale), Anglais niveau C1 (TOEIC 895/990), Espagnol niveau B2.",
             title_2: "Cours principaux à l'EPF école d'ingénieurs:",
@@ -138,14 +138,14 @@ const language = {
         },
         section_3:{
             li:{
-                title_1: "Stage en machine learning",
+                title_1: "Projet de fin d'étude",
                 title_2: "Projets en IA",
                 title_3: "Stage de web développeur",
                 title_4: "Projets autres",
             },
             projects: {
                 cytomineTitle:"Cytomine",
-                cytomineProject:"Actuellement dans mon stage de fin d'étude (de février à août 2022), je participe au développement de solutions de machine learning intégrées dans la plateforme <a href='https://cytomine.com/' target='_blank' class='link-actility'>Cytomine</a>. Cytomine est une plateforme open source permettant l'analyse collaborative d'images médicales de très grandes tailles.<br><br>",
+                cytomineProject:"Actuellement dans mon stage de fin d'étude (de février à août 2022), je participe à l'intégration de solutions de machine learning dans la plateforme <a href='https://cytomine.com/' target='_blank' class='link-actility'>Cytomine</a>. Cytomine est une plateforme open source permettant l'analyse collaborative d'images médicales de très grandes tailles.<br><br>J'ai également effectué des travaux Backend / Frontend et travaillé sur l'optimisation du lancement des algorithmes.<br>",
                 cytomineButton: "https://github.com/cytomine",
                 aiTitle: ["Démineur", "Sushi"],
                 aiProject: ["Modèles de machine learning pour le jeu du démineur. Un par <span class='colored'>satisfaction de contraintes et logique</span> et un par <span class='colored'>double apprentissage profond par renforcement</span>", "Classification de sushi à l'aide <span class='colored'>d'apprentissage profond, de forêts aléatoires extrêmes et de machine à vecteur de support.</span>.<br><br>Génération de sushi à l'aide d'un <span class='colored'>GAN.</span>.<a href='sushi.html' class='link-actility'>Testez le !</a>"],
